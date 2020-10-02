@@ -6,29 +6,19 @@
     "eslint.packageManager": "npm",
     "better-comments.tags": [
       {
-        "tag": "🚨",
+        "tag": "❌",
         "color": "#FF0000",
         "strikethrough": false
       },
       {
-        "tag": "✅",
+        "tag": "✔",
         "color": "#00FF00",
         "strikethrough": false
       },
       {
-        "tag": "💡",
-        "color": "#FFFF00",
-        "strikethrough": false
-      },
-      {
         "tag": "‣",
-        "color": "#00FFFF",
+        "color": "#FFFFFF",
         "backgroundColor": "#333333",
-        "strikethrough": false
-      },
-      {
-        "tag": "(",
-        "color": "#FFFF00",
         "strikethrough": false
       },
       {
@@ -36,12 +26,7 @@
         "color": "#FFFF00",
         "strikethrough": false
       },
-      {
-        "tag": "==",
-        "backgroundColor": "#FFFFFF",
-        "color": "#000000",
-        "strikethrough": false
-      }
+      
     ]
   },
   "extensions": {
