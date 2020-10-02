@@ -1,0 +1,27 @@
+{
+  "name": "typescript-types",
+  "version": "1.0.0",
+  "description": "Custom Typescript types",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SakshiShreya/typescript-types.git"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "custom"
+  ],
+  "author": "Sakshi Shreya <shreyasakshi96@gmail.com> (https://sakshishreya.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SakshiShreya/typescript-types/issues"
+  },
+  "homepage": "https://github.com/SakshiShreya/typescript-types#readme",
+  "devDependencies": {
+    "eslint": "5.16.0"
+  }
+}
