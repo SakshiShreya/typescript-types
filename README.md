@@ -25,11 +25,15 @@ If you are a contributor, then please work on the branch that is created automat
 
 ## 📃 Format
 
-- 1 file should have only one type (or if you want to add an enhanced type related to the same type in a file then you can add).
-- Each type should have a documentation about how to use the type with an example
+- Filename should be "-" separated.
+- The type name should be same as file name but it should be in PascalCase.
+- Please put all the examples in a namespace so that the variables and types of other files don't interfare. Namespace name should start with "N".
+- 1 file should have only one type (or if you want to add an enhanced type related to the same type in a file then you can add. In this case the type name can differ, but namespace name should be equal to typename starting with "N").
+- Each type should have a documentation about how to use the type with an example.
 - This workspace uses **Better Comments** extension which helps in highlighting the comments. Please take benefit of this extension and write comments accordingly. For sample, please see any existing file, or contact me.
 - The main type should be highlighted because that is the thing that you are coming here for. It should be easy to locate that.
 - Please provide proper examples of how to use the types and how not to use.
+- Please add all the examples inside namespace.
 
 If you think that there can be any enhancement in the way comments/documentation is written or if there can be any enhancement in the project structure please feel free to raise an issue or contact me.
 
