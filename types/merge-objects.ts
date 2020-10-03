@@ -20,20 +20,20 @@
 type MergeObjects<A, B> = B & Pick<A, Exclude<keyof A, keyof B>>;
 // ‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣
 
-// ✔ Example:
-type TypeA = { a: number; b: string };
-type TypeB = { a: string; c: number };
+namespace NMergeObjects {
+  // ✔ Example:
+  type TypeA = { a: number; b: string };
+  type TypeB = { a: string; c: number };
 
-const a: TypeA = { a: 123, b: "Hello" };
-const b: TypeB = { a: "hello", c: 234 };
+  const a: TypeA = { a: 123, b: "Hello" };
+  const b: TypeB = { a: "hello", c: 234 };
 
-const c: MergeObjects<TypeA, TypeB> = Object.assign(a, b);
-const d: MergeObjects<TypeA, TypeB> = { ...a, ...b };
+  const c: MergeObjects<TypeA, TypeB> = Object.assign(a, b);
+  const d: MergeObjects<TypeA, TypeB> = { ...a, ...b };
 
-// ❌ It can't be used with more than two Generic parameters For e.g. MergeObjects<A, B, C> is not valid
-// ✔ For merging more than 2 objects
-type TypeE = { c: boolean; d: string };
+  // ❌ It can't be used with more than two Generic parameters For e.g. MergeObjects<A, B, C> is not valid
+  // ✔ For merging more than 2 objects
+  type TypeE = { c: boolean; d: string };
 
-const e: TypeE = { c: true, d: "Hello" };
-
-const f: MergeObjects<TypeA, MergeObjects<TypeB, TypeE>> = { ...a, ...b, ...e };
+  const e: TypeE = { c: true, d: "Hello" };
+}
